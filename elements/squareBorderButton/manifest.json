@@ -1,0 +1,19 @@
+{
+  "elements": {
+    "squareBorderButton": {
+      "settings": {
+        "name": "Square Border Button",
+        "metaThumbnailUrl": "[publicPath]/square-border-button-thumbnail.png",
+        "metaPreviewUrl": "[publicPath]/square-border-button-preview.png",
+        "metaDescription": "An outline button with border animation effect on hover state."
+      }
+    }
+  },
+  "categories": {
+    "Button": {
+      "elements": [
+        "squareBorderButton"
+      ]
+    }
+  }
+}
