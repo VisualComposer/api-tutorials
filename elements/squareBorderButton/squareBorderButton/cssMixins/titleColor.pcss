@@ -1,0 +1,10 @@
+.vce-square-border-button--title-color-$selector {
+  a&,
+  button& {
+    &, &:not(:hover) {
+      @if $color != false {
+        color: $color;
+      }
+    }
+  }
+}

@@ -19,7 +19,9 @@ add_action(
  */
     'vcv:api',
     function ($api) {
-        $elementsToRegister = [];
+        $elementsToRegister = [
+            'squareBorderButton'
+        ];
         $pluginBaseUrl = rtrim(plugins_url(basename(__DIR__)), '\\/');
         /** @var \VisualComposer\Modules\Elements\ApiController $elementsApi */
         $elementsApi = $api->elements;

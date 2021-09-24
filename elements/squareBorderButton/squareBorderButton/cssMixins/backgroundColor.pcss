@@ -1,0 +1,14 @@
+.vce-square-border-button--background-color-$selector {
+  a&,
+  button& {
+    &, &:not(:hover) {
+      @if $color != false {
+        background-color: $color;
+      }
+    }
+    &::before,
+    &::after {
+      background-color: $color;
+    }
+  }
+}

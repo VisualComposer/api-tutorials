@@ -1,0 +1,23 @@
+.vce-square-border-button--border-width-$selector {
+  a&,
+  button& {
+    &, &:not(:hover) {
+      @if $width != false {
+        border-width: $(width)px;
+        border-style: solid;
+      }
+    }
+    &::before {
+      top: calc($(width)px * 2);
+      left: -$(width)px;
+      width: calc(100% + $(width)px * 2);
+      height: calc(100% - $(width)px * 4);
+    }
+    &::after {
+      top: -$(width)px;
+      left: calc($(width)px * 2);
+      width: calc(100% - $(width)px * 4);
+      height: calc(100% + $(width)px * 2);
+    }
+  }
+}

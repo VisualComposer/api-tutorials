@@ -1,0 +1,11 @@
+.vce-square-border-button--border-color-$selector {
+  a&,
+  button& {
+    &, &:not(:hover) {
+      @if $color != false {
+        border-color: $color;
+        border-style: solid;
+      }
+    }
+  }
+}

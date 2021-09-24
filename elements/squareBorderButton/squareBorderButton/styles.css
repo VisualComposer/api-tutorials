@@ -1,0 +1,38 @@
+.vce-square-border-button--align-left {
+  text-align: left;
+}
+.vce-square-border-button--align-right {
+  text-align: right;
+}
+.vce-square-border-button--align-center {
+  text-align: center;
+}
+
+.vce-square-border-button {
+  padding: 15px 43px;
+  position: relative;
+}
+.vce-square-border-button span {
+  z-index: 4;
+  position: relative;
+}
+
+.vce-square-border-button::before {
+  content: "";
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+  transform: scaleY(1);
+}
+.vce-square-border-button:hover::before {
+  transform: scaleY(0);
+}
+
+.vce-square-border-button::after {
+  content: "";
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+  transform: scaleX(1);
+}
+.vce-square-border-button:hover::after {
+  transform: scaleX(0);
+}
